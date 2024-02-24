@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Open Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-fzxlwa+OxlHTMpTUCIyz3qfCpNVii6Z9i5GDjtOBwiGjzI/1aWKx+Jzo2j9LdO6N" crossorigin="anonymous">
+
+  <!-- Your custom styles -->
+  <style>
+    body {
+      padding-top: 56px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+    }
+    section {
+    margin-bottom: 50px;
+  }
+    .navbar {
+      background-color: #ffeeba;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #5d4037;
+    }
+    .navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #d9534f;
+    }
+     #home {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    font-size: 20px;
+    background: url('Photo.jpg') center center/cover; 
+    color: white; /* Set text color to white for better visibility on the background */
+  }
+     #home .company-name {
+    font-size: 2em;
+    color: dark brown;
+  }
+  #home .company-name  img{
+max-height: 60px;
+  }
+   #home .content-box {
+    background-color: rgba(141, 110, 99, 0.8); /* Brownish color for the content box with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .navbar-brand img {
+      max-height: 60px; /* Set the maximum height of the logo */
+      width: ;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="Logo.jpg" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#delivery">Delivery</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+
+
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <!-- Home Section -->
+<section id="home">
+  <div class="container">
+    <div class="content-box">
+    <div class="company-name"><img src="Logo.jpg" alt="Logo"></div>
+    <h1>Welcome to Our Bakery</h1>
+    <p>Indulge in the finest pastries, cakes, and more. At our bakery, we are passionate about crafting delicious treats that delight your taste buds. From artisanal bread to decadent cakes, each item is made with the highest quality ingredients and a dash of love.</p>
+   
+    
+    <a href="#menu" class="btn btn-warning"><i class="fas fa-shopping-cart"></i>Order Now</a>
+  </div>
+  </div>
+</section>
+
+
+<!-- Menu Section -->
+<section id="menu">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Menu</h2>
+
+    <div class="row">
+      <!-- Cake Item -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="cake.jpg" class="card-img-top" alt="Cake">
+          <div class="card-body">
+            <br/>
+            <br/>
+            <h5 class="card-title">Deluxe Chocolate Cake</h5>
+
+            <p class="card-text">Decadent chocolate cake layered with rich chocolate ganache.</p>
+            <p class="card-text"><strong>Price:</strong> R20</p>
+            <p class="card-text"><strong>Sold:</strong> Per Slice</p>
+            <button class="btn btn-warning btn-block mt-3"><i class='bx bx-cart'></i> Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scone Item -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="scone.jpg" class="card-img-top" alt="Scone">
+          <div class="card-body">
+            <br/>
+            <h5 class="card-title">Blueberry Scone</h5>
+            <p class="card-text">A buttery scone filled with juicy blueberries.</p>
+            <p class="card-text"><strong>Price:</strong>R5 </p>
+            <p class="card-text"><strong>Sold:</strong> Each</p>
+            <button class="btn btn-warning btn-block mt-3"><i class='bx bx-cart'></i> Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Muffin Item -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="Muffin.jpg" class="card-img-top" alt="Muffin">
+          <div class="card-body">
+
+            <h5 class="card-title">Chocolate Chip Muffin</h5>
+            <p class="card-text">Moist muffin filled with chocolate chips for a delightful treat.</p>
+            <p class="card-text"><strong>Price:</strong> R10</p>
+            <p class="card-text"><strong>Sold:</strong> Per Muffin</p>
+            <button class="btn btn-warning btn-block mt-3"><i class='bx bx-cart'></i> Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doughnut Item -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="doughnuts.jpg" class="card-img-top" alt="Doughnut">
+          <div class="card-body">
+            <br/>
+            <br/>
+            <h5 class="card-title">Glazed Doughnut</h5>
+            <p class="card-text">Classic doughnut with a sweet glaze, perfect for any occasion.</p>
+            <p class="card-text"><strong>Price:</strong> R5</p>
+            <p class="card-text"><strong>Sold:</strong> Per Doughnut</p>
+            <button class="btn btn-warning btn-block mt-3"><i class='bx bx-cart'></i> Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more items as needed -->
+      <!-- Repeat the card structure for each item -->
+
+    </div>
+  </div>
+</section>
+
+    
+      
+    
+
+    <!-- Gallery Section -->
+<section id="gallery">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Gallery</h2>
+
+    <div class="row">
+      <!-- Cake Gallery -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="cake.jpg" class="card-img-top" alt="Deluxe Chocolate Cake">
+          <div class="card-body">
+            <h5 class="card-title">Deluxe Chocolate Cake</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scone Gallery -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="scone.jpg" class="card-img-top" alt="Blueberry Scone">
+          <div class="card-body">
+            <h5 class="card-title">Blueberry Scone</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Muffin Gallery -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="Muffin.jpg" class="card-img-top" alt="Chocolate Chip Muffin">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Chip Muffin</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doughnut Gallery -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="doughnuts.jpg" class="card-img-top" alt="Glazed Doughnut">
+          <div class="card-body">
+            <h5 class="card-title">Glazed Doughnut</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more gallery items as needed -->
+      <!-- Repeat the card structure for each product -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Delivery Section -->
+<section id="delivery">
+  <div class="container">
+    <h2 class="text-center mb-4">Delivery Information</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Our Delivery Process</h4>
+        <p>We strive to provide prompt and reliable delivery services for your orders. Here's how our delivery process works:</p>
+        <ul>
+          <li>Orders are processed within 24 hours.</li>
+          <li>We offer same-day delivery for orders placed before 12:00 PM.</li>
+          <li>Delivery charges may apply based on your location.</li>
+          <li>Your order will be carefully packaged to ensure freshness upon delivery.</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h4>Place Your Order</h4>
+        <p>Fill out the form below to place your order. Our team will contact you to confirm the details and arrange for delivery.</p>
+
+        <!-- Order Form -->
+        <form>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea class="form-control" id="address" rows="3" placeholder="Enter your delivery address" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+          </div>
+
+          <button type="submit" class="btn btn-warning">Place Order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Location Section -->
+<section id="location">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Location</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Visit Our Bakery</h4>
+        <p>Stop by our bakery to experience the delightful aroma of freshly baked goods. Our friendly staff is ready to assist you with your orders and inquiries.</p>
+
+        <address>
+          <strong>Freshly Baked Bakery</strong><br>
+          123 Bakery Street<br>
+          Cityville, Country<br>
+          Postal Code: 12345
+        </address>
+      </div>
+
+      <div class="col-md-6">
+        <!-- Google Map (Replace with your own API key and location coordinates) -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d0.000000!3d0.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMDfCsDQ1JzA5LjAiTiAwN8KwMTQnNDQuOSJF!5e0!3m2!1sen!2sus!4v1645349734123!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p>Have a question or feedback? Reach out to us!</p>
+
+        <form>
+          <div class="mb-3">
+            <label for="contactName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="contactName" placeholder="John Doe">
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="contactEmail" placeholder="john@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label">Your Message</label>
+            <textarea class="form-control" id="contactMessage" rows="4" placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h4>Connect with Us</h4>
+
+        <!-- Social Media Links -->
+        <ul class="list-unstyled">
+          <li><i class='bx bxl-facebook'></i> <a href="#">Facebook</a></li>
+          <li><i class='bx bxl-twitter'></i> <a href="#">Twitter</a></li>
+          <li><i class='bx bxl-instagram'></i> <a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2024 Freshly Baked. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <!-- Newsletter Subscription Form -->
+        <form class="form-inline">
+          <label class="sr-only" for="newsletterEmail">Email address</label>
+          <input type="email" class="form-control mr-2" id="newsletterEmail" placeholder="Your email">
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Your website content goes here -->
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
